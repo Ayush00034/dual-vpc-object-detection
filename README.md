@@ -64,7 +64,7 @@ The Load Balancer listener rules routing Port 80 traffic to the cross-network IP
 ### 5. Subnet Isolation Maps
 AWS Resource maps showing the exact routing structure of the public and private environments.
 * **VPC 1 (Public Entry):**
-    ![VPC 1 Map](./images/vpc1.jpg)
+    ![VPC 1 Map](./images/vcp1.jpg)
 * **VPC 2 (Private Processing):**
     ![VPC 2 Map](./images/vpc2.jpg)
 
