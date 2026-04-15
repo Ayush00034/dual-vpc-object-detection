@@ -1,0 +1,12 @@
+# Ignore AWS Keys
+*.pem
+
+# Ignore Python Virtual Environments
+venv/
+__pycache__/
+
+# Ignore massive AI Model Weights
+*.pt
+
+# Ignore Mac system files
+.DS_Store
