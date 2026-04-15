@@ -14,7 +14,7 @@ Instead of deploying the web server and the AI model on a single public machine,
 *A high-level view of how user traffic routes through the isolated networks.*
 
 ### Detailed Infrastructure Map
-![Architecture Diagram](./images/architecture.jpg)
+![Architecture Diagram](./images/architecture.png)
 *The complete AWS resource and networking breakdown.*
 
 ### 1. The Frontend (Decoupled UI)
@@ -47,11 +47,11 @@ Because AWS compute-optimized instances (`c7i-flex.large`) are expensive, this i
 
 ### 1. Live Inference Result
 The decoupled S3 frontend successfully routing an image to the private backend and returning YOLOv8 bounding boxes in ~176ms.
-![Website UI](./images/website.jpg)
+![Website UI](./images/website.png)
 
 ### 2. Network Isolation (Zero Public Access)
 The EC2 instance dashboard proving the server operates exclusively on a private IPv4 address (`10.1.1.136`) with no public IP attached.
-![Private Server Specs](./images/private_server.jpg)
+![Private Server Specs](./images/private_server.png)
 
 ### 3. Cross-VPC Health Check
 The Target Group showing a "Healthy" status, proving the Application Load Balancer in VPC 1 is successfully communicating with NGINX in VPC 2 through the peering tunnel.
