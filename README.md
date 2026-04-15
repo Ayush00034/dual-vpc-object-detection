@@ -47,11 +47,11 @@ Because AWS compute-optimized instances (`c7i-flex.large`) are expensive, this i
 
 ### 1. Live Inference Result
 The decoupled S3 frontend successfully routing an image to the private backend and returning YOLOv8 bounding boxes in ~176ms.
-![Website UI](./images/websitee.jpg)
+![Website UI](./images/website.jpg)
 
 ### 2. Network Isolation (Zero Public Access)
 The EC2 instance dashboard proving the server operates exclusively on a private IPv4 address (`10.1.1.136`) with no public IP attached.
-![Private Server Specs](./images/private%20server.jpg)
+![Private Server Specs](./images/private_server.jpg)
 
 ### 3. Cross-VPC Health Check
 The Target Group showing a "Healthy" status, proving the Application Load Balancer in VPC 1 is successfully communicating with NGINX in VPC 2 through the peering tunnel.
@@ -59,14 +59,14 @@ The Target Group showing a "Healthy" status, proving the Application Load Balanc
 
 ### 4. Traffic Management
 The Load Balancer listener rules routing Port 80 traffic to the cross-network IP target. 
-![Load Balancer Rules](./images/load%20balancer.png)
+![Load Balancer Rules](./images/load_balancer.png)
 
 ### 5. Subnet Isolation Maps
 AWS Resource maps showing the exact routing structure of the public and private environments.
 * **VPC 1 (Public Entry):**
     ![VPC 1 Map](./images/vcp1.jpg)
 * **VPC 2 (Private Processing):**
-    ![VPC 2 Map](./images/vpc%202.jpg)
+    ![VPC 2 Map](./images/vpc2.jpg)
 
 ---
 
