@@ -1,6 +1,6 @@
 # Secure Dual-VPC Cloud Inference API for Car Detection
 
-**Author:** Ayush Chandrakar | Vidyavardhaka College of Engineering (VVCE)
+**Author:** Ayush Chandrakar
 
 ## Overview
 This project is a fully decoupled, enterprise-grade cloud architecture built on AWS. It serves a custom YOLOv8 car detection model (Computer Vision) through a highly secure API. 
